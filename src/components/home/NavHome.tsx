@@ -7,6 +7,7 @@ export const NavHome: FC<NavProp> = ({
   iconLefth,
   iconRigth,
   setValue,
+  value
 }) => {
   const navigate = useNavigate();
 
@@ -16,6 +17,7 @@ export const NavHome: FC<NavProp> = ({
         <Icon>{iconLefth}</Icon>
       </div>
       <PrductImput
+      value={value}
         placeholder='Buscar'
         onChange={(e: { target: { value: string } }) =>
           setValue(e.target.value)

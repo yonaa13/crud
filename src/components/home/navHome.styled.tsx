@@ -10,10 +10,14 @@ export const Container = styled.div`
   position: fixed;
 `;
 export const ContainerHome = styled.div`
+  background-image:url(http://localhost:3000/productosLimpieza.jpg );
+  background-size:cover;
+  background-repeat: no-repeat;
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 100vh;
+  height:auto;
+  min-height: 100vh;
 `;
 
 export const Icon = styled.div`

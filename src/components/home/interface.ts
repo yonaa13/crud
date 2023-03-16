@@ -4,4 +4,5 @@ export interface NavProp {
 iconLefth?:ReactElement
 iconRigth?:ReactElement
 setValue: Dispatch<SetStateAction<string>> | ((value: string )=>void) 
+value?:string
 }

@@ -23,5 +23,6 @@ export const Img = styled.img`
 export const P = styled.p`
   padding: 0px;
   margin: 12px;
+  text-transform: capitalize;
 `;
 
