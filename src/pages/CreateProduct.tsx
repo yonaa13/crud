@@ -7,7 +7,7 @@ import {
   H1,
   P,
 } from '../components/CreateProduct/createProduct.styled';
-import { InputProduct } from '../components/CreateProduct/InputProduct';
+import { InputProduct } from '../components/CreateProduct/index';
 import { FaPencilAlt } from 'react-icons/fa';
 
 export const CreateProduct = () => {

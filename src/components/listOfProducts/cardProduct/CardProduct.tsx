@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-import { PropCard } from './interfaceCardProduct';
+import { Props } from '../../../interfaces/interface';
 import { ContainerCard, Img,P } from './cardProduct.styled';
-export const CardProduct: FC<PropCard> = ({ name,brand, img,price }) => {
+export const CardProduct: FC<Props> = ({ name,brand, img,price }) => {
   
   return (
     <ContainerCard >

@@ -1,0 +1,1 @@
+export {InputProduct} from './InputProduct'
