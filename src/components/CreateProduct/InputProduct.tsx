@@ -11,7 +11,7 @@ export const InputProduct: FC<PropsInput> = ({
   inputType = 'text',
   label,
   placeholder,
-  setValue,
+  setValue
 }) => {
   return (
     <ContainerInput>

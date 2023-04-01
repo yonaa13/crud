@@ -8,15 +8,16 @@ export const Container = styled.div`
   color: white;
   width: 100%;
   position: fixed;
+  z-index: 1000;
 `;
 export const ContainerHome = styled.div`
-  background-image:url(http://localhost:3000/productosLimpieza.jpg );
-  background-size:cover;
+  background-image: url(http://localhost:3000/productosLimpieza.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height:auto;
+  height: auto;
   min-height: 100vh;
 `;
 

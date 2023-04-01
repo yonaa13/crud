@@ -32,11 +32,12 @@ export const Input = styled.input`
 `;
 export const H1 = styled.h1`
   color: wheat;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 `;
 export const P = styled.p`
   color: wheat;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   right: 0px;
   cursor: pointer;
+  ;
 `;

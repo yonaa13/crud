@@ -1,6 +1,6 @@
-import  blanqueador from "../imgProduct/blanqueador.jpg";
-import detergente from "../imgProduct/detergente.jpg";
-import fragancia from "../imgProduct/fragancia.jpg";
+import  blanqueador from "../assets/imgProduct/blanqueador.jpg";
+import detergente from "../assets/imgProduct/detergente.jpg";
+import fragancia from "../assets/imgProduct/fragancia.jpg";
 
 export const Product = [
   {
@@ -46,6 +46,20 @@ export const Product = [
     price:"753"
   },
   {
+    id: 12,
+    img: fragancia,
+    name: 'fragancia',
+    brand:"Asevi",
+    price:"233"
+  },
+  {
+    id: 13,
+    img: fragancia,
+    name: 'fragancia',
+    brand:"Asevi",
+    price:"233"
+  },
+  {
     id: 7,
     img: blanqueador,
     name: 'blanqueador',
@@ -58,5 +72,19 @@ export const Product = [
     name: 'blanqueador',
     brand:"Cloralex",
     price:"221"
+  },
+  {
+    id: 9,
+    img: blanqueador,
+    name: 'blanqueador',
+    brand:"Cloralex",
+    price:"621"
+  },
+  {
+    id: 10,
+    img: blanqueador,
+    name: 'blanqueador',
+    brand:"Cloralex",
+    price:"2241"
   },
 ];

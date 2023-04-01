@@ -26,8 +26,13 @@ export const CreateProduct = () => {
       brand: brand,
       price: price,
     };
-    products.push(newProduct);
-setProducts([newProduct])
+    if(name  && brand  && price && file){
+      products.push(newProduct);
+      setProducts([newProduct])
+    }else{
+      alert('Completa los campos faltantes')
+    }
+  
   };
   return (
     <Container>
@@ -37,6 +42,7 @@ setProducts([newProduct])
         label={'Img'}
         inputType={'file'}
         setValue={setFile}
+        
       />
       <InputProduct
         icon={<FaPencilAlt />}

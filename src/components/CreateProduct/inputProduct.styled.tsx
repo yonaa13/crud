@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { PropsInput } from './interfaceInput';
 
 export const ContainerInput = styled.div`
   display: flex;
