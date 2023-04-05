@@ -15,7 +15,7 @@ export const CreateProduct = () => {
   const [brand, setBrand] = useState<string>('');
   const [price, setPrice] = useState<string>('');
   const [file, setFile] = useState<string>('');
-  const { products,setProducts } = useGlobalContext();
+  const { products, setProducts } = useGlobalContext();
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -26,13 +26,11 @@ export const CreateProduct = () => {
       brand: brand,
       price: price,
     };
-    if(name  && brand  && price && file){
-      products.push(newProduct);
-      setProducts([newProduct])
-    }else{
-      alert('Completa los campos faltantes')
+    if (name && brand && price && file) {
+      setProducts([...products, newProduct]);
+    } else {
+      alert('Completa los campos faltantes');
     }
-  
   };
   return (
     <Container>
@@ -42,7 +40,6 @@ export const CreateProduct = () => {
         label={'Img'}
         inputType={'file'}
         setValue={setFile}
-        
       />
       <InputProduct
         icon={<FaPencilAlt />}
