@@ -2,7 +2,14 @@ import { FC, useState } from 'react';
 import { type Prop } from '../cardProduct/interface';
 import { Modal } from '../../modal/modal';
 import { HiOutlineX } from 'react-icons/hi';
-import { ContainerCard, Img, P, ContainerIcon } from './cardProduct.styled';
+import { FiEdit } from 'react-icons/fi';
+import {
+  ContainerCard,
+  Img,
+  P,
+  ContainerIconDelete,
+  ContainerIconEdit,
+} from './cardProduct.styled';
 import { useGlobalContext } from '../../../context/GlobalContext';
 export const CardProduct: FC<Prop> = ({
   id,
@@ -18,21 +25,24 @@ export const CardProduct: FC<Prop> = ({
 
   const getId = setValue;
 
-  const handleClick = () => {
-    setModal(!modal);
-    setId(getId);
-  };
   const deleteCard = () => {
     const deleteProduct = products.filter(elem => elem.id !== ids);
     setProducts(deleteProduct);
   };
+  const editCard = () => {
+    setModal(!modal);
+    setId(getId);
+  };
   return (
     <>
-      <ContainerCard onClick={() => handleClick()}>
+      <ContainerCard>
         <Img src={img} />
-        <ContainerIcon onClick={() => deleteCard()}>
+        <ContainerIconDelete onClick={() => deleteCard()}>
           <HiOutlineX />
-        </ContainerIcon>
+        </ContainerIconDelete>
+        <ContainerIconEdit onClick={() => editCard()}>
+          <FiEdit />
+        </ContainerIconEdit>
         <P>Produc: {name}</P>
         <P>Brand: {brand}</P>
         <P>Price: ${price}</P>

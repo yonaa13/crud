@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useGlobalContext } from '../context/GlobalContext';
 import {
   Container,
+  ContainerInputs,
   Input,
   H1,
   P,
@@ -34,36 +35,38 @@ export const CreateProduct = () => {
   };
   return (
     <Container>
-      <H1>Introduce el nuevo producto</H1>
-      <InputProduct
-        icon={<FaPencilAlt />}
-        label={'Img'}
-        inputType={'file'}
-        setValue={setFile}
-      />
-      <InputProduct
-        icon={<FaPencilAlt />}
-        label={'Name'}
-        placeholder={'Introduce el nombre'}
-        setValue={setName}
-      />
-      <InputProduct
-        icon={<FaPencilAlt />}
-        label={'Brand'}
-        placeholder={'Introduce la Marca'}
-        setValue={setBrand}
-      />
+      <ContainerInputs>
+        <H1>Introduce el nuevo producto</H1>
+        <InputProduct
+          icon={<FaPencilAlt />}
+          label={'Img'}
+          inputType={'file'}
+          setValue={setFile}
+        />
+        <InputProduct
+          icon={<FaPencilAlt />}
+          label={'Name'}
+          placeholder={'Introduce el nombre'}
+          setValue={setName}
+        />
+        <InputProduct
+          icon={<FaPencilAlt />}
+          label={'Brand'}
+          placeholder={'Introduce la Marca'}
+          setValue={setBrand}
+        />
 
-      <InputProduct
-        icon={<FaPencilAlt />}
-        label={'Price'}
-        inputType={'number'}
-        placeholder={'Introduce el precio'}
-        setValue={setPrice}
-      />
+        <InputProduct
+          icon={<FaPencilAlt />}
+          label={'Price'}
+          inputType={'number'}
+          placeholder={'Introduce el precio'}
+          setValue={setPrice}
+        />
 
-      <Input type='submit' onClick={handleClick} />
-      <P onClick={() => navigate('/')}>IrAHome</P>
+        <Input type='submit' onClick={handleClick} />
+        <P onClick={() => navigate('/')}>IrAHome</P>
+      </ContainerInputs>
     </Container>
   );
 };

@@ -75,9 +75,17 @@ export const P = styled.p`
   margin: 12px;
   text-transform: capitalize;
 `;
-export const ContainerIcon = styled.div`
+export const ContainerIconDelete = styled.div`
   position: absolute;
-  right:10%;
+  right:5%;
+  top: 6%;
+  font-size:2rem;
+  z-index: 10;
+  cursor:pointer;
+`;
+export const ContainerIconEdit = styled.div`
+  position: absolute;
+  left:5%;
   top: 6%;
   font-size:2rem;
   z-index: 10;
