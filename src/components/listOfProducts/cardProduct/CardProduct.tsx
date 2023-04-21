@@ -26,6 +26,7 @@ export const CardProduct: FC<Prop> = ({
   const getId = setValue;
 
   const deleteCard = () => {
+    setId(getId);
     const deleteProduct = products.filter(elem => elem.id !== ids);
     setProducts(deleteProduct);
   };
