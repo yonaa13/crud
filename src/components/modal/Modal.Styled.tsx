@@ -7,7 +7,6 @@ export const Container = styled.div<Props>`
   flex-direction: column;
   position: absolute;
   background-color: red;
-  padding-left: 40px;
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -31,9 +30,13 @@ export const Container = styled.div<Props>`
   }
 `;
 
-export const P = styled.p`
-color: #ffffffb6;
-`;
-export const Label = styled.label`
-color: black;
+export const Button = styled.button`
+  margin-top: 35px;
+  right: 43%;
+  width: 100%;
+  background-color: #c10c0c;
+  font-size: large;
+  border-radius: 50px;
+  border-top: none;
+  color: #ffffff;
 `;
